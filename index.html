@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shreyash Shinde – Resume</title>
+  <style>
+    :root{
+      --bg: #ffffff;
+      --fg: #1f2328;
+      --muted: #5d646d;
+      --accent: #0b5fff;
+      --rule: #e6e8eb;
+      --chip: #f2f5f8;
+    }
+    html.dark{
+      --bg: #0f1216;
+      --fg: #e6edf3;
+      --muted: #93a1b3;
+      --accent: #6ea8ff;
+      --rule: #222932;
+      --chip: #1a212b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; background:var(--bg); color:var(--fg);
+      font: 14px/1.35 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    .toolbar{
+      position:sticky; top:0; z-index:2;
+      display:flex; gap:8px; align-items:center; justify-content:center;
+      padding:10px; background:var(--bg); border-bottom:1px solid var(--rule);
+    }
+    .toolbar button{
+      border:1px solid var(--rule); background:transparent; padding:8px 12px; border-radius:8px; cursor:pointer;
+    }
+    .stage{
+      display:flex; justify-content:center; padding:24px;
+    }
+    .sheet{
+      width:210mm; min-height:297mm; background:var(--bg); color:var(--fg);
+      box-shadow:0 10px 30px rgba(0,0,0,.08); position:relative;
+      padding:16mm 16mm 18mm 16mm;
+    }
+    header{
+      display:flex; gap:16px; align-items:flex-start; margin-bottom:10mm;
+      border-bottom:1px solid var(--rule); padding-bottom:6mm;
+    }
+    .name{font-size:28px; font-weight:700; letter-spacing:.2px}
+    .role{color:var(--muted); margin-top:4px}
+    .contact{
+      margin-left:auto; text-align:right; font-size:12.5px; color:var(--muted);
+    }
+    .contact a{color:inherit; text-decoration:none}
+    .grid{
+      display:grid; grid-template-columns: 68% 32%; gap:10mm;
+    }
+    section{margin-bottom:6mm}
+    h2{
+      font-size:13.5px; letter-spacing:.12em; text-transform:uppercase;
+      margin:0 0 3mm 0; color:var(--muted);
+    }
+    .item{margin-bottom:4mm}
+    .item h3{margin:0; font-size:14.5px}
+    .meta{font-size:12.5px; color:var(--muted); margin-top:2px}
+    .bullets{margin:3mm 0 0 0; padding-left:4.2mm}
+    .bullets li{margin:1.4mm 0}
+    .chips{display:flex; flex-wrap:wrap; gap:6px}
+    .chip{background:var(--chip); border:1px solid var(--rule); padding:5px 8px; border-radius:999px; font-size:12.5px}
+    @page{ size: A4; margin: 12mm; }
+    @media print{
+      .toolbar{display:none}
+      body{background:white}
+      .sheet{box-shadow:none; width:auto; min-height:auto; padding:0}
+      a{color:inherit; text-decoration:none}
+    }
+    @media (max-width: 820px){
+      .sheet{width:100%; min-height:auto; padding:18px; box-shadow:none}
+      .grid{grid-template-columns: 1fr; gap:16px}
+      .contact{text-align:left; margin-left:0}
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar" aria-hidden="true">
+    <button onclick="window.print()">Download PDF</button>
+    
+  </div>
+
+  <main class="stage" role="main">
+    <article class="sheet" aria-label="Resume">
+      <header>
+        <div>
+          <div class="name">Shreyash Shinde</div>
+          <div class="role">Frontend Developer/ Engineer</div>
+        </div>
+        <div class="contact">
+          <div><a href="mailto:shreyashvs2809@gmail.com">shreyashvs2809@gmail.com</a></div>
+          <div><a href="tel:+91XXXXXXXXXX">+91-8669012921</a></div>
+          <div><a href="https://shreyashvs28.github.io/my_Portfolio" target="_blank" rel="noopener">Portfolio</a></div>
+          <div><a href="https://www.linkedin.com/in/shreyashvshinde" target="_blank" rel="noopener">LinkedIn</a></div>
+          <div>Pune, India</div>
+        </div>
+      </header>
+
+      <div class="grid">
+        <div>
+          <section>
+            <h2>Professional Summary</h2>
+            <p>Creative and detail-oriented Frontend Engineer with 3+ years of hands-on experience building responsive, accessible, and high-performance web applications. Specializing in React.js, TypeScript, and modern UI frameworks, with a strong foundation in JavaScript, HTML, and CSS. Adept at translating complex requirements into user-friendly solutions that combine aesthetics with functionality. Known for writing clean, maintainable code, collaborating effectively in distributed teams, and delivering features on time without compromising quality.</p>
+          </section>
+
+          <section>
+            <h2>Professional Experience</h2>
+            <div class="item">
+              <h3>Frontend Developer — Freelance, Open Source, and Personal Projects</h3>
+              <div class="meta">(2022 – Present)</div>
+              <ul class="bullets">
+                <li>Designed and developed 10+ fully responsive websites & dashboards, achieving Lighthouse performance scores of 95+.</li>
+                <li>Built a component library in React, reducing repetitive CSS by 40% and speeding up development cycles.</li>
+                <li>Integrated real-time search & filtering using JavaScript and React hooks, improving user engagement by 25%.</li>
+                <li>Enhanced accessibility compliance to WCAG 2.1 standards, increasing usability for all users.</li>
+                <li>Collaborated with designers via Figma to translate UI mockups into production-ready code.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <h3>Frontend Developer — Hackathon Projects</h3>
+              <ul class="bullets">
+                <li>Led the frontend development in team-based hackathons, creating interactive and user-friendly interfaces under strict deadlines.</li>
+                <li>Delivered pixel-perfect designs with smooth functionality, contributing significantly to project scoring and presentation.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Key Projects</h2>
+            <div class="item">
+              <h3>EV Charging Station Management System | Portfolio Website | Split Expense Manager</h3>
+              <ul class="bullets">
+                <li>Built a complete frontend & backend for a slot-booking system with integrated payment gateway (Razorpay).</li>
+                <li>Designed an admin panel to manage stations and view real-time booking data.</li>
+                <li>Implemented geolocation-based search to find chargers within a 50km radius.</li>
+                <li>Created a personal portfolio showcasing skills, projects, and achievements in a minimal and responsive design.</li>
+                <li>Optimized performance and accessibility for a seamless user experience.</li>
+                <li>Developed an app to track shared expenses and calculate splits among multiple users.</li>
+                <li>Implemented persistent storage for offline usage and dynamic calculations.</li>
+              </ul>
+            </div>
+
+           
+           
+          </section>
+
+          <section>
+            <h2>Education</h2>
+            <div class="item">
+              <h3>B.Tech – Computer Engineering</h3>
+              <div class="meta">All India Shri Shivaji Memorial Society, Institute of Information Technology, Pune</div>
+            </div>
+          </section>
+        </div>
+
+        <aside>
+          <section>
+            <h2>Core Skills</h2>
+            <div class="chips">
+              <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span>
+              <span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Tailwind</span>
+              <span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">Git</span>
+            </div>
+          </section>
+
+          <section>
+            <h2>Achievements & Highlights</h2>
+            <ul class="bullets">
+              <li>Top 5% performer in a global JavaScript coding challenge (CodeWars/LeetCode).</li>
+              <li>Contributed to 3+ open-source projects with merged pull requests.</li>
+              <li>Maintained 95%+ on-time delivery rate for freelance projects.</li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </article>
+  </main>
+
+  <!-- Theme Toggle Script -->
+<script>
+const root = document.documentElement;
+const themeBtn = document.getElementById('themeBtn');
+const saved = localStorage.getItem('theme');
+
+if (saved) {
+    root.classList.toggle('dark', saved === 'dark');
+}
+
+themeBtn.addEventListener('click', () => {
+    root.classList.toggle('dark');
+    localStorage.setItem('theme', root.classList.contains('dark') ? 'dark' : 'light');
+});
+</script>
+
+<!-- External Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<!-- Download PDF Script -->
+<script>
+function downloadPDF() {
+    const resume = document.querySelector('.resume-container');
+    
+    html2canvas(resume, { scale: 2 }).then(canvas => {
+        const imgData = canvas.toDataURL('image/png');
+        const pdf = new jspdf.jsPDF('p', 'mm', 'a4');
+        
+        const pageWidth = 210; // A4 width in mm
+        const pageHeight = 297; // A4 height in mm
+        const imgWidth = pageWidth;
+        const imgHeight = canvas.height * imgWidth / canvas.width;
+        
+        // Fit into single page
+        let yPos = 0;
+        if (imgHeight > pageHeight) {
+            pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, pageHeight);
+        } else {
+            pdf.addImage(imgData, 'PNG', 0, 0, imgWidth, imgHeight);
+        }
+        
+        pdf.save('resume.pdf');
+    });
+}
+</script>
+
+</body>
+</html>
